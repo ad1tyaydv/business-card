@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Special+Gothic+Expanded+One&display=swap');
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-top: 70px;
+    margin-bottom: 20px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 2px black;
+    border-radius: 30px;
+    height: 600px;
+    width: 700px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.right {
+    margin-left: -40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    margin-bottom: 100px;
+    align-items: center;
+}
+
+.main input {
+    width: 320px;
+    height: 45px;
+    border: solid 2px black;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 1rem;
+    padding-left: 12px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    cursor: pointer;
+}
+
+.header {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main button {
+    margin-top: 20px;
+    margin-bottom: -50px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    width: 335px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.main button:hover {
+    transition: background-color 0.1s;
+    background-color: #2d2d2d;
+}
+
+.cardWrapper {
+    background: #1e1e1e !important;
+    color: #fff !important;
+    border-radius: 12px;
+    width: 500px;
+    height: 300px;
+    display: inline-block;
+    font-family: "Fira Code", monospace;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5),
+                inset 0 0 5px rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    border: 1px solid #2d2d2d;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.jsonHeader {
+    display: flex;
+    align-items: center;
+    background: #2b2b2b !important;
+    padding: 6px 12px;
+}
+
+.dots {
+    display: flex;
+    gap: 6px;
+    margin-right: 12px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.red { 
+    background: #ff5f56; 
+}
+
+.yellow { 
+    background: #ffbd2e; 
+}
+
+.green { 
+    background: #27c93f; 
+}
+
+.fileName {
+    flex: 1;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.fileTab {
+    background: #1e1e1e !important;
+    padding: 6px 12px;
+    border-bottom: 1px solid #333;
+    font-size: 14px;
+    color: #ddd;
+}
+
+.icons {
+    display: flex;
+    gap: 14px;
+    padding: 8px 12px;
+    font-size: 16px;
+    color: #bbb;
+    border-bottom: 1px solid #333;
+}
+
+.content {
+    background: #1e1e1e !important;
+    padding: 12px 15px;
+    font-size: 14px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    display: block;
+    height: calc(100% - 120px);
+    overflow: auto;
+}
+
+.line {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 8px;
+    align-items: flex-start;
+}
+
+.lineNumber {
+    color: #666;
+    width: 22px;
+    text-align: right;
+    margin-right: 10px;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.key {
+    color: #f77669;
+    flex-shrink: 0;
+}
+
+.value {
+    color: #dcdcdc;
+    overflow-wrap: break-word;
+}
+
+.string {
+    color: #c3e88d;
+}
+
+.hidden {
+    display: none;
+}
+
+.downloadBtn {
+    margin-top: 30px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    width: 335px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.downloadBtn:hover {
+    transition: background-color 0.1s;
+    background-color: #2d2d2d;
+}
+
+.downloadSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+@media (min-width: 769px) {
+    .left {
+        border: solid 2px black;
+        padding: 20px;
+    }
+    
+    .downloadSection {
+        display: none;
+    }
+    
+    .desktopDownload {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        margin-top: 20px;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .left {
+        width: 95vw;
+        height: auto;
+        border: none;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+        order: 2;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .right {
+        margin-left: 0;
+        margin-right: 0;
+        order: 1;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .main {
+        margin-bottom: 0;
+        order: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header {
+        font-size: 2rem;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .main input {
+        width: 280px;
+        font-size: 1rem;
+    }
+    
+    .main button {
+        width: 299px;
+        margin-bottom: 0;
+    }
+    
+    .cardWrapper {
+        width: 95vw;
+        max-width: 400px;
+        height: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+    
+    .content {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    
+    .jsonHeader, .fileTab, .icons {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
+    
+    .downloadSection {
+        order: 3;
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .downloadBtn {
+        width: 280px;
+        font-size: 1rem;
+    }
+    
+    .desktopDownload {
+        display: none;
+    }
+}
